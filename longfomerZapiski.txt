@@ -1,0 +1,28 @@
+Longformer combines
+a local windowed attention with a task moti-
+vated global attention.
+
+Its attention mechanism scales linearly instead of quadratically.
+
+We call this model
+Longformer-Encoder-Decoder (LED) that uses
+Longformer’s efficient attention pattern on the en-
+coder network, allowing it to address long docu-
+ment seq2seq tasks such as summarization.
+
+In contrast [to alternative long document models], Longformer
+can process long sequences without truncating or
+chunking, allowing us to adopt a much simpler ap-
+proach that concatenates the available context and
+processes it in a single pass.
+
+To facilitate modeling long sequences for
+seq2seq learning, we propose a Longformer variant
+that has both the encoder and decoder Transformer
+stacks but instead of the full self-attention in the
+encoder, it uses the efficient local+global attention
+pattern of the Longformer.
+
+The decoder uses the
+full self-attention to the entire encoded tokens and
+to previously decoded locations.
