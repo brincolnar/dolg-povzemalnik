@@ -1,0 +1,6 @@
+Vzemi pretrained SloBERTo in zgradi dolgo verzijo (Longformer).
+
+Cel proces:
+
+1. Zgradim "dolgo" verzijo SloBERTe
+2. Fine-tunam dolgo verzijo za nalogo povzemanja
